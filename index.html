@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion | Pure JavaScript</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <section>
+      <div class="accordion">
+        <div class="content">
+          <div class="title">Heading 1</div>
+          <div class="body">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellendus sint suscipit, incidunt qui assumenda eos! Qui quas
+              tenetur mollitia quaerat error distinctio quae, minus excepturi
+              atque, repellendus eum nihil iste?
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="title">Heading 2</div>
+          <div class="body">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellendus sint suscipit, incidunt qui assumenda eos! Qui quas
+              tenetur mollitia quaerat error distinctio quae, minus excepturi
+              atque, repellendus eum nihil iste?
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="title">Heading 3</div>
+          <div class="body">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellendus sint suscipit, incidunt qui assumenda eos! Qui quas
+              tenetur mollitia quaerat error distinctio quae, minus excepturi
+              atque, repellendus eum nihil iste?
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="title">Heading 4</div>
+          <div class="body">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellendus sint suscipit, incidunt qui assumenda eos! Qui quas
+              tenetur mollitia quaerat error distinctio quae, minus excepturi
+              atque, repellendus eum nihil iste?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 40px">
+      <div class="soft">
+        <div class="icons">
+          <input type="checkbox" name="" />
+          <input type="checkbox" name="" />
+          <input type="checkbox" name="" />
+          <input type="checkbox" name="" />
+          <input type="checkbox" name="" />
+          <input type="checkbox" name="" />
+        </div>
+      </div>
+    </section>
+    <script>
+      const accordion = document.getElementsByClassName('content');
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener('click', function () {
+          this.classList.toggle('active');
+        });
+      }
+    </script>
+  </body>
+</html>
